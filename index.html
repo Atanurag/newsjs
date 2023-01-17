@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+  <head>
+ 
+
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+ html {
+  scroll-behavior: smooth;
+}
+
+
+
+.bbbox{
+width: 50%; height: 33px; 
+text-align: center;
+margin: auto;
+word-wrap: break-word;
+}
+
+.bbox{
+text-align: center;margin: auto;
+word-wrap: break-word;
+width: 75%; height: 150px; border:1px solid yellow;
+}
+
+
+
+.in{
+
+display: none;
+}
+
+
+.inn{
+visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+ #loader {
+  display:none;
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+
+
+  @media (max-width: 640px){
+  .sm\:w-20 {
+    width:8rem!important;
+  }
+  }
+
+  @media (min-width: 640px){
+  .md\:w-40 {
+    width: 10rem!important;
+  }
+  }
+   @media (max-width: 640px){
+  .scr {
+    width: 1650px!important;
+  }
+  .scr1{
+    width:2465px!important;
+  }
+  }
+
+
+/*#divv{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}*/
+  
+.maindiv{
+  height: 230px;
+width: 172px;
+border: 2px solid red;
+}
+
+.imagd2{
+ height: 51px;
+width: 54px;
+border: 2px solid brown;
+
+
+}
+
+.imgs{
+  object-fit:contain;
+  height:20px;
+  width:20px;
+}
+
+
+
+.textdivs{
+   height: 177px;
+width: 168px;
+border: 2px solid blue;
+}
+
+.titlep{
+font-size: 18px;
+}
+
+.butto{
+padding:2px;
+color:red;
+}
+
+
+.scrollbardiv::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbardiv {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+p{
+  text-decoration-line: none!important;
+}
+
+  @media (max-width: 640px){
+  .resimg{
+    object-fit: contain!important;
+  }}
+
+
+
+.up{
+  position: fixed;
+  top:0px;
+}
+.down{
+  position:fixed;
+  top:35px;
+}
+
+.selmtpx{
+margin-top:60px;
+
+  } .selmtrem{
+    margin-top: 3.75rem;
+  }
+</style>
+  </head>
+  <body class="bg-#f2f2f2" style="overflow:scroll;
+  "  onscroll="j()"><!--
+<div class="flex justify-evenly gap-x-8 gap-y-6 flex-wrap ">
+
+<div class="h-full relative md:h-full border-2 border-solid border-sky-500 flex flex-col md:w-[400px] w-[300px] shadow-[0_0_33px_-15px_rgba(0,0,0,0.68)] md:shadow-[0_0_33px_-15px_rgba(0,0,0,0.68)]" >
+  
+<div class="h-3/6  border-2 border-solid border-red-500 md:w-[400px] w-[300px]" >
+
+  <img src="https://images.hindustantimes.com/img/2023/01/13/1600x900/UKRAINE-CRISIS-PUTIN-0_1671966536415_1671966536415_1673614324697_1673614324697.JPG"class="sm:object-contain md:object-contain md:h-48 md:w-full  object-contain h-48 w-full">
+</div>
+
+
+
+
+<div class="h-3/6 border-2 border-solid border-yellow-500 py-1 px-2 flex flex-col ">
+  
+<h1 class="not-italic font-normal text-xl text-center" >The quick brown fox ...</h1>
+
+
+<p class="text-base font-normal  text-center text-justify p-2">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrye of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publ</p>
+
+
+<a class="text-center w-20 h-8  mb-5  mt-5 font-black focus:outline-none text-white bg-emerald-400 hover:bg-emerald-500 focus:ring-4 focus:bg-emerald-400 font-medium  text-sm  active:scale-5    rounded-full">gfh</a>
+
+</div>
+
+
+
+
+
+<p class="absolute  bottom-1 mt-5" style="left:53px;">erer</p>
+<p class="absolute  bottom-1  mt-5" style="right:53px">erer</p>
+</div>
+
+
+<div class="h-full relative md:h-full border-2 border-solid border-sky-500 flex flex-col md:w-[500px] w-[270px]" >
+  
+<div class="h-3/6  border-2 border-solid border-red-500 md:w-[500px] w-[270px]" >
+
+  <img src="https://images.firstpost.com/wp-content/uploads/2023/01/Elon-Musks-Twitter-planned-on-charging-users-a-one-time-fee-for-their-usernames-to-grow-revenue.jpg"class="md:object-contain md:h-48 md:w-96  object-contain h-48 w-96">
+</div>
+
+
+
+
+<div class="h-3/6 border-2 border-solid border-yellow-500 py-1 px-2 flex flex-col ">
+  
+<h1 class="not-italic font-normal text-xl text-center" >The quick brown fox ...</h1>
+
+
+<p class="text-base font-normal  text-center text-justify p-2">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrye of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publ</p>
+
+
+<a class="text-center w-20 h-8  mb-5  mt-5 font-black focus:outline-none text-white bg-emerald-400 hover:bg-emerald-500 focus:ring-4 focus:bg-emerald-400 font-medium  text-sm      rounded-full">gfh</a>
+
+</div>
+
+
+
+
+
+<p class="absolute  bottom-1 mt-5" style="left:53px;">erer</p>
+<p class="absolute  bottom-1  mt-5" style="right:53px">erer</p>
+</div>
+
+
+
+
+
+<div class="h-full relative md:h-full border-2 border-solid border-sky-500 flex flex-col md:w-[500px] w-[270px]" >
+  
+<div class="h-3/6  border-2 border-solid border-red-500 md:w-[500px] w-[270px]" >
+
+  <img src="https://images.firstpost.com/wp-content/uploads/2023/01/Elon-Musks-Twitter-planned-on-charging-users-a-one-time-fee-for-their-usernames-to-grow-revenue.jpg"class="md:object-contain md:h-48 md:w-96  object-contain h-48 w-96">
+</div>
+
+
+
+
+<div class="h-3/6 border-2 border-solid border-yellow-500 py-1 px-2 flex flex-col ">
+  
+<h1 class="not-italic font-normal text-xl text-center" >The quick brown fox ...</h1>
+
+
+<p class="text-base font-normal  text-center text-justify p-2">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrye of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publ</p>
+
+
+<a class="text-center w-20 h-8  mb-5  mt-5 font-black focus:outline-none text-white bg-emerald-400 hover:bg-emerald-500 focus:ring-4 focus:bg-emerald-400 font-medium  text-sm      rounded-full">gfh</a>
+
+</div>
+
+
+
+
+
+<p class="absolute  bottom-1 mt-5" style="left:53px;">erer</p>
+<p class="absolute  bottom-1  mt-5" style="right:53px">erer</p>
+</div>
+
+
+
+<div class="h-full relative md:h-full border-2 border-solid border-sky-500 flex flex-col md:w-[500px] w-[270px]" >
+  
+<div class="h-3/6  border-2 border-solid border-red-500 md:w-[500px] w-[270px]" >
+
+  <img src="https://images.firstpost.com/wp-content/uploads/2023/01/Elon-Musks-Twitter-planned-on-charging-users-a-one-time-fee-for-their-usernames-to-grow-revenue.jpg"class="md:object-contain md:h-48 md:w-96  object-contain h-48 w-96">
+</div>
+
+
+
+
+<div class="h-3/6 border-2 border-solid border-yellow-500 py-1 px-2 flex flex-col ">
+  
+<h1 class="not-italic font-normal text-xl text-center" >The quick brown fox ...</h1>
+
+
+<p class="text-base font-normal  text-center text-justify p-2">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrye of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publ</p>
+
+
+<a class="text-center w-20 h-8  mb-5  mt-5 font-black focus:outline-none text-white bg-emerald-400 hover:bg-emerald-500 focus:ring-4 focus:bg-emerald-400 font-medium  text-sm   active:scale-125 ease-in duration-100 rounded-full">bytnb</a>
+
+</div>
+
+
+
+
+
+<p class="absolute  bottom-1 mt-5" style="left:53px;">erer</p>
+<p class="absolute  bottom-1  mt-5" style="right:53px">erer</p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+<h1 class="text-3xl font-bold underline text-center mb-8" >
+ Get News</h1>
+ 
+
+
+
+<div class="flex justify-start sel1">
+  <div class="mb-3 xl:w-96">
+    <select class="form-select appearance-none
+      block
+      w-15
+      px-3
+      py-1.5
+      text-base
+      font-normal
+      text-gray-700
+      bg-white bg-clip-padding bg-no-repeat
+      border border-solid border-gray-300
+      rounded
+      transition
+      ease-in-out
+      m-0
+      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example" id="selelemen" data-bs-toggle="tooltip" data-bs-placement="top" title="Select Country">
+        <option selected>india default</option>
+       
+    </select>
+  </div>
+</div>
+
+
+
+<div class="relative mt-1">
+  <div class="mb-3 xl:w-96">
+    <select class="form-select appearance-none
+      block
+      w-15
+      px-3
+      py-1.5
+      text-base
+      font-normal
+      text-gray-700
+      bg-white bg-clip-padding bg-no-repeat
+      border border-solid border-gray-300
+      rounded
+      transition
+      ease-in-out
+      m-0
+      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example" id="selelang"data-bs-toggle="tooltip" data-bs-placement="top" title="Select Language" >
+        
+        <option value="en">en</option>
+        <option value="hi">hi</option>
+      
+    </select>
+  </div>
+</div>
+
+  
+
+
+
+
+ <div style="overflow-x:scroll; width:100vw;overflow-y: hidden; position:fixed;background-color: white;height:58px;
+z-index: 9999;" class="scrollbardiv">
+<div style="width:2919px;" class="scr1">
+
+</div>
+</div>
+
+
+
+<div id="loader" class="center"></div>
+
+
+
+
+
+
+
+<div id="divv" style="height:80vh" class="flex md:flex  justify-evenly md:justify-evenly gap-x-8 md:gap-x-8 gap-y-6 md:gap-y-6 flex-wrap md:flex-wrap"></div>
+
+<!--<button id="btn12">add</button>
+
+
+<p >button Pressed<span id="incrementPressed">0</span>Times</p>
+
+<p >Triggred<span id="increment_count">0</span>Times</p>-->
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <script >
+//var div1=document.querySelector("#pop");
+/*
+var btnPressed=document.querySelector("#incrementPressed");
+
+var count=document.querySelector("#increment_count");
+var pressedCount=0;
+var triggerCount=0;
+
+const myDebounce=(cb,d)=>{
+  let timer;
+  return function (...args){
+if(timer)clearTimeout(timer)
+
+timer=setTimeout(()=>{
+cb(...args);
+},d);
+
+  }
+}
+const debou=myDebounce(()=>{
+triggerCount+=1;
+ count.textContent=triggerCount;
+},800)
+
+btn12.addEventListener('click',()=>{
+  btnPressed.textContent=pressedCount++;
+ debou()
+})
+*/
+
+
+
+/*
+0:btn all url
+1:img
+2:date
+3:author
+
+5:summary
+6:title
+*/
+
+
+  //scrolling
+let sr=document.querySelector(".scrollbardiv");
+let sc1=document.querySelector(".scr1");
+  let sel1=document.querySelector(".sel1");
+
+function j(){
+   if(window.pageYOffset>=63){
+    //sr.style.position="fixed";
+    sr.classList.remove("down")
+     sel1.classList.remove("selmtpx");
+    sr.classList.add("up")
+    sel1.classList.add("selmtrem");
+    sc1.style.marginTop="23px";
+     sc1.style.marginBottom="13px";
+
+  }
+ else{
+    //sr.style.position="fixed";
+     sr.classList.remove("up")
+    sr.classList.add("down")
+       sel1.classList.add("selmtpx");
+   sel1.classList.remove("selmtrem");
+   sc1.style.marginTop="0px";
+    sc1.style.marginBottom="13px";
+  
+  }
+ 
+}
+
+ 
+
+//scorlling
+
+
+
+let di=document.querySelector("#divv")
+
+      var to="",cont="IN",lang="en";
+async function getd(country,topi,la){
+   document.querySelector("#loader").style.display="block";
+di.innerHTML="";
+var options = {
+  method: 'GET',
+
+ headers: {
+    'x-api-key': 'o9sfBQCCOMdWdZ7NqxQtIEheyLhNL_OC-INol8lRGnE'
+  }
+};
+
+try{
+
+
+let fet=await fetch(`https://api.newscatcherapi.com/v2/latest_headlines?countries=${country}&lang=${la}&topic=${topi}`,options);
+let e=await fet.json();
+
+
+for(let i=0;i<e.articles.length;i++){
+
+let maindiv=document.createElement("div");
+  maindiv.classList.add('h-[83%]', 'relative' ,'shadow-[0_0_33px_-15px_rgba(0,0,0,0.68)]','md:shadow-[0_0_33px_-15px_rgba(0,0,0,0.68)]','border-sky-500', 'flex' ,'flex-col' ,'md:w-[400px]','w-[300px]','md:h-full');
+
+let imagd2=document.createElement("div");
+ imagd2.classList.add('h-[30%]' , 'border-red-500','md:w-[400px]', 'w-[300px]','md:h-[39%]');
+
+let img=document.createElement("img");
+img.src= await e.articles[i].media;
+img.classList.add('lg:object-contain','sm:object-contain','md:object-contain' ,'md:h-48', 'md:w-full', 'object-contain','h-48',  'w-full');
+
+
+ let textdiv=document.createElement("div");
+textdiv.classList.add('h-3/6' ,'border-yellow-500', 'py-1' ,'px-2' ,'flex', 'flex-col');
+
+
+
+ let titlep1=document.createElement("h1");
+ if(e.articles[i].title.length>=116){
+
+titlep1.textContent= await e.articles[i].title.slice(0,91)+"..."
+}
+else{
+
+titlep1.textContent=await e.articles[i].title;
+}
+titlep1.classList.add('not-italic' ,'font-normal', 'text-xl', 'text-center');
+
+
+ let summaryp2=document.createElement("p");
+ summaryp2.textContent= await e.articles[i].summary.slice(0, 250)+"...";
+summaryp2.classList.add('text-base','font-normal'  ,'text-center', 'text-justify' ,'p-2');
+ 
+
+ let datep3=document.createElement("p");
+datep3.textContent= await e.articles[i].published_date;
+datep3.classList.add('absolute',  'bottom-[-4px]','text-[12px]','mt-5','md:text-sm','left-[23px]','md:left-[53px]');
+
+
+
+ let authorp4=document.createElement("p");
+ authorp4.textContent= await e.articles[i].author;
+authorp4.classList.add('absolute', 'text-[12px]', 'bottom-[-4px]', 'mt-5','md:text-sm','right-[33px]','md:right-[53px]');
+
+
+
+
+let a=document.createElement("a");
+a.classList.add('text-center','no-underline' ,'w-20' ,'h-8' , 'mb-5',  'mt-5', 'font-black', 'focus:outline-none', 'text-white', 'bg-emerald-400' ,'hover:bg-emerald-500' , 'focus:bg-emerald-400', 'font-medium',  'text-lg'     , 'rounded-full','active:scale-125','ease-in' ,'duration-100');
+a.textContent="Read";
+a.href= await e.articles[i].link;
+
+imagd2.append(img);
+
+document.querySelector("#loader").style.display="none";
+
+textdiv.append(titlep1,summaryp2,a)
+
+maindiv.append(imagd2,textdiv,datep3,authorp4)
+  di.append(maindiv);
+
+
+
+}
+
+}
+
+catch(e){console.log(e.message)}
+/*
+fetch(`https://api.newscatcherapi.com/v2/latest_headlines?countries=${country}&lang=${la}&topic=${topi}`,options).then(e=>e.json()).then(e=>{
+console.log(e)
+for(let i=0;i<e.articles.length;i++){
+
+let maindiv=document.createElement("div");
+  maindiv.classList.add('h-full', 'relative' ,'border-2','border-solid','shadow-[0_0_33px_-15px_rgba(0,0,0,0.68)]','md:shadow-[0_0_33px_-15px_rgba(0,0,0,0.68)]','border-sky-500', 'flex' ,'flex-col' ,'md:w-[400px]','w-[300px]','md:h-full');
+
+let imagd2=document.createElement("div");
+ imagd2.classList.add('h-[30%]' , 'border-2', 'border-solid' ,'border-red-500','md:w-[400px]', 'w-[300px]','md:h-[39%]');
+
+let img=document.createElement("img");
+img.src=e.articles[i].media;
+img.classList.add('lg:object-contain','sm:object-contain','md:object-contain' ,'md:h-48', 'md:w-full', 'object-contain','h-48',  'w-full');
+
+
+ let textdiv=document.createElement("div");
+textdiv.classList.add('h-3/6', 'border-2', 'border-solid' ,'border-yellow-500', 'py-1' ,'px-2' ,'flex', 'flex-col');
+
+
+
+ let titlep1=document.createElement("h1");
+ if(e.articles[i].title.length>=116){
+
+titlep1.textContent=e.articles[i].title.slice(0,91)+"..."
+}
+else{
+
+titlep1.textContent=e.articles[i].title;
+}
+titlep1.classList.add('not-italic' ,'font-normal', 'text-xl', 'text-center');
+
+
+ let summaryp2=document.createElement("p");
+ summaryp2.textContent=e.articles[i].summary.slice(0, 250)+"...";
+summaryp2.classList.add('text-base','font-normal'  ,'text-center', 'text-justify' ,'p-2');
+ 
+
+ let datep3=document.createElement("p");
+datep3.textContent=e.articles[i].published_date;
+datep3.classList.add('absolute',  'bottom-[-4px]','text-[12px]','mt-5','md:text-sm','left-[23px]','md:left-[53px]');
+
+
+
+ let authorp4=document.createElement("p");
+ authorp4.textContent=e.articles[i].author;
+authorp4.classList.add('absolute', 'text-[12px]', 'bottom-[-4px]', 'mt-5','md:text-sm','right-[33px]','md:right-[53px]');
+
+
+
+
+let a=document.createElement("a");
+a.classList.add('text-center','no-underline' ,'w-20' ,'h-8' , 'mb-5',  'mt-5', 'font-black', 'focus:outline-none', 'text-white', 'bg-emerald-400' ,'hover:bg-emerald-500' , 'focus:bg-emerald-400', 'font-medium',  'text-lg'     , 'rounded-full','active:scale-125','ease-in' ,'duration-100');
+a.textContent="Read";
+a.href=e.articles[i].link;
+
+imagd2.append(img);
+
+
+
+textdiv.append(titlep1,summaryp2,a)
+
+maindiv.append(imagd2,textdiv,datep3,authorp4)
+  di.append(maindiv);
+
+
+
+}
+console.log(e.articles.length)
+
+}).catch(e=>console.log(e.message))
+*/
+
+
+}
+
+
+
+
+let c=console.log.bind(document)
+let sele=document.querySelector("#selelemen");
+
+let ar=["Afghanistan:AF","Australia:AU","Bangladesh:BD","Canada:CA","China:CN","India:IN","Iraq:IQ","Japan:JP","Pakistan:PK","Saudi-Arabia:SA","South-Africa:ZA","Sri-Lanka:LK","Ukraine:UA","United-States-of-America:US"]
+const arvalue=new Array(ar.length)
+const artext=new Array(ar.length)
+for( i in ar){
+  let op=document.createElement("option");
+  
+  arvalue[i]=ar[i].slice(-2)
+  op.value=arvalue[i];
+  artext[i]=ar[i].slice(0,-3)
+  op.innerText=artext[i];
+
+sele.append(op)
+  //c(i)
+}
+sele.addEventListener("change",(e)=>{
+  cont=e.target.value;
+console.log(e.target.value)
+})
+
+
+
+document.querySelector("#selelang").addEventListener('click',(e)=>{
+  lang=e.target.value
+})
+
+
+
+let topics=["tech", "world", "finance",
+"politics", "business", "economics", "entertainment", "beauty", "travel", "music", "food", "science", "gaming", "energy"]
+let scro=document.querySelector(".scr1");
+for(i in topics){
+  let di=document.createElement("div");
+  di.classList.add('w-40','bg-blue','h-15','rounded-full', 'border','border-slate-600',"hover:border-zinc-900", 'bg-gray-800', 'text-center','text-white','hover:text-black' ,'hover:bg-gray-100' ,'inline-block' ,'align-middle','mx-6'  ,'sm:w-20', 'md:w-40','active:scale-125','ease-in' ,'duration-100');
+  let spa=document.createElement("span");
+  spa.innerText=topics[i];
+  di.addEventListener('click',(e)=>{
+    
+    to=e.originalTarget.innerText;
+    getd(cont,to,lang)
+    console.log(to)
+  })
+  di.append(spa)
+  scro.append(di)
+}
+
+
+
+//https://www.iban.com/country-codes
+//8skAVwpd0Gck1hq1S_0ryoCgp3lN1IoB8XuLeqxv3ko
+
+
+/*
+
+function get(country,topi){
+  
+
+var options = {
+  method: 'GET',
+  
+  
+  headers: {
+    'x-api-key': '8skAVwpd0Gck1hq1S_0ryoCgp3lN1IoB8XuLeqxv3ko'
+  }
+};
+
+fetch(`https://api.newscatcherapi.com/v2/latest_headlines?countries=${contry}&lang=en&topic=${topi}`,options).then(e=>e.json()).then(e=>console.log(e)).catch(e=>console.log(e.message))
+}
+//topics
+/* news, sport,
+tech, world, finance,
+politics, business, economics, entertainment, beauty, travel, music, food, science, gaming, energy.*/
+
+
+
+
+   </script>
+
+   
+
+  </body>
+</html>
